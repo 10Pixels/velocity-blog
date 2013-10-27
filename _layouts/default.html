@@ -1,19 +1,8 @@
 {% include header.html %}
 
       <div class="row">
-        <!-- Start sidebar content area -->
-        <div class="col-lg-8 col-md-8" id="content-area">
-          <section>
-           {% for post in site.posts %}
-             <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-             {{ post.excerpt }}
-             <em><a href="{{ post.url }}">Read more about {{ post.title }}</a></em>
-           {% endfor %}
-          </section>
-        </div>
-
+        {{ content }}
         {% include sidebar.html %}
-
       </div>
       <!-- End content area -->
     </div>
