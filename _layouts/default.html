@@ -1,59 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Velocity Blog</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="/css/bootstrap-theme.min.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen">
-    <script src="/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <div class='container'>
-      <div class="row"> 
-        <header class="col-lg-12">
-          <h1><img alt="Logo" id="logo" src="/images/logo.gif"> Velocity Blog</h1>
-          <a href="/">Blog</a>
-          <hr>
-        </header>
-      </div>
-
+{% include header.html %}
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=109396279099979";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
       <div class="row">
-        <div class="col-lg-8" id="content-area">
-          <section>
-           {% for post in site.posts %}
-             <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-             {{ post.excerpt }}
-             <em><a href="{{ post.url }}">Read more about {{ post.title }}</a></em>
-           {% endfor %}
-          </section>
-        </div>
-
-        <div class="col-lg-3" id="sidebar">
-            <!-- Start Sign up block -->
-          <h4>Tired of Managing Courses the Hard Way?</h4>
-          <p>Velocity is a web-based application that allows independent educators and trainers to provide their students with learning materials to help them succeed.</p>
-          <p>We are currently taking a limited number of beta customers. Help us kick the tires.</p>
-          <button type="button" class="btn btn-success">I want beta access</button>
-          <!-- End sign up block -->
-
-
-          <!-- Begin MailChimp Signup Form -->
-          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"> <style type="text/css">
-            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          <div id="mc_embed_signup">
-          <form action="http://10pixels.us6.list-manage.com/subscribe/post?u=b39c0784290e6ede702699305&amp;id=3516261faa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <label for="mce-EMAIL">Recieve Training Tips by Email</label>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </form>
-          </div>
-          <!--End mc_embed_signup-->
-        </div>
+        {{ content }}
+        {% include sidebar.html %}
       </div>
+      <!-- End content area -->
 
+    <footer id="copyright-data">
+      <p>Copyright &copy; 2013 <a href="http://10pixels.net">10Pixels Software</a></p>
+    </footer>
     </div>
   </body>
 </html>
