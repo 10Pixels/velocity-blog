@@ -25,11 +25,18 @@ h3 {
 h4 {
   font-size: 24px; }
 
-header a {
+header img {
+  position: relative;
+  top: -4px; }
+header a, header a:hover {
+  color: #333333;
+  text-decoration: none; }
+header a.menu-link {
   position: relative;
   left: 790px;
   bottom: 36px;
-  padding-right: 16px; }
+  padding-right: 16px;
+  color: #428bca; }
 
 #sidebar {
   margin-top: 88px;
@@ -51,3 +58,8 @@ header a {
 
 #disqus_thread {
   margin-top: 40px; }
+
+footer#copyright-data {
+  margin-top: 20px; }
+  footer#copyright-data p {
+    font-size: 14px !important; }
