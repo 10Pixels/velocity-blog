@@ -1,18 +1,40 @@
-h1 {
-  font-size: 300%; }
+p {
+  font-size: 17px !important;
+  font-family: Andada;
+  line-height: 26px; }
+
+p#author-and-date {
+  font-style: italic;
+  font-size: 13px !important; }
+
+h1.post-heading {
+  font-size: 42px; }
+  h1.post-heading a {
+    color: #333333; }
+  h1.post-heading a:hover {
+    color: #428bca; }
+
+h2 {
+  font-size: 28px;
+  margin: 5% 0;
+  color: #4cb0ff; }
 
 h3 {
   font-size: 200%; }
 
 h4 {
-  font-size: 150%; }
+  font-size: 24px; }
 
 header a {
   float: right;
   margin-top: -34px; }
 
 #sidebar {
-  margin-top: 6%; }
+  margin-top: 88px;
+  margin-left: 40px; }
+  #sidebar p, #sidebar button {
+    font: 15px Helvetica, Arial !important;
+    line-height: 19px !important; }
 
 #content-area {
   margin-top: 4%; }

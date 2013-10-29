@@ -6,8 +6,10 @@ title: Articles For Independent Educators and Trainers
 <div class="col-lg-8 col-md-8" id="content-area">
   <section>
    {% for post in site.posts %}
-     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-     {{ post.excerpt }}
+     <h1 class="post-heading"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+     <p id="author-and-date">Written by <a href="https://twitter.com/scottradcliff">Scott
+       Radcliff</a> on {{ post.date |date: "%B %d, %Y" }}</p>
+     {{ post.content }}
      <em><a href="{{ post.url }}">Read more about {{ post.title }}</a></em>
    {% endfor %}
   </section>
