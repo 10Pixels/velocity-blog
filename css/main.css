@@ -26,8 +26,10 @@ h4 {
   font-size: 24px; }
 
 header a {
-  float: right;
-  margin-top: -34px; }
+  position: relative;
+  left: 790px;
+  bottom: 36px;
+  padding-right: 16px; }
 
 #sidebar {
   margin-top: 88px;
@@ -46,3 +48,6 @@ header a {
     font-weight: normal !important; }
   #mc_embed_signup input[type='email'] {
     width: 100% !important; }
+
+#disqus_thread {
+  margin-top: 40px; }
