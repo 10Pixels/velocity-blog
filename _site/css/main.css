@@ -63,3 +63,7 @@ footer#copyright-data {
   margin-top: 20px; }
   footer#copyright-data p {
     font-size: 14px !important; }
+
+.btn a {
+  color: white;
+  text-decoration: none; }
