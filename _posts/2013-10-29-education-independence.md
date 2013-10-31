@@ -40,6 +40,6 @@ The software you use should allow them to perform a task with minimal frustratio
 ## Growing and Teaching
 The details I've outlined here will get you a good start on helping others learn what you know. And it gets easier, a lot easier. It's important to iterate on the learning plan. Some things won't work. That's okay; try something new. There aren't any rules. Do what works for you.
 
-I'd love to hear what about your experience with what works o doesn't work for you. Hit me up on Twitter [@scottradcliff](https://twitter.com/scottradcliff) or send me an email [scott@10pixels.net](scott@10pixels.net)
+I'd love to hear about your experience with what works or doesn't work for you. Hit me up on Twitter [@scottradcliff](https://twitter.com/scottradcliff) or send me an email [scott@10pixels.net](scott@10pixels.net)
 
 
